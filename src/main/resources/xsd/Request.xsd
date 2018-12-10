@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Thu Nov 22 2018 10:42:44 GMT+0100 (heure normale d’Europe centrale) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="MeterAssetConnectArmedRequestMessage">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="header">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="verb" type="xs:string"></xs:element>
+                                             <xs:element name="noun" type="xs:string"></xs:element>
+                                             <xs:element name="revision" type="xs:int"></xs:element>
+                                             <xs:element name="dateTime" type="xs:dateTime"></xs:element>
+                                             <xs:element name="source" type="xs:string"></xs:element>
+                                             <xs:element name="messageID" type="xs:int"></xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="payload">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="meterAsset">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="mRID" type="xs:string"></xs:element>
+                                                               <xs:element name="idType" type="xs:string"></xs:element>
+                                                               <xs:element name="pathName" type="xs:string"></xs:element>
+                                                               <xs:element name="modelNumber" type="xs:string"></xs:element>
+                                                               <xs:element name="serialNumber" type="xs:string"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="requestPriority" type="xs:int"></xs:element>
+                                             <xs:element name="executeStartTime" type="xs:dateTime"></xs:element>
+                                             <xs:element name="executeExpireTime" type="xs:dateTime"></xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>

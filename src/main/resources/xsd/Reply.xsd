@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!-- XML Schema Generated from XML Document on Wed Nov 21 2018 16:39:53 
+		GMT+0100 (heure normale d’Europe centrale) -->
+	<!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+	<xs:element name="MeterAssetConnectArmedReplyMessage">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="header">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="verb" type="xs:string"></xs:element>
+							<xs:element name="noun" type="xs:string"></xs:element>
+							<xs:element name="revision" type="xs:string"></xs:element>
+							<xs:element name="dateTime" type="xs:dateTime"></xs:element>
+							<xs:element name="source" type="xs:string"></xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="reply">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="replyCode" type="xs:string"></xs:element>
+							<xs:element name="correlationId" type="xs:string"></xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
