@@ -1,8 +1,8 @@
 //
-// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
+// Ce fichier a ï¿½tï¿½ gï¿½nï¿½rï¿½ par l'implï¿½mentation de rï¿½fï¿½rence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.11.22 à 10:57:54 AM GMT+01:00 
+// Toute modification apportï¿½e ï¿½ ce fichier sera perdue lors de la recompilation du schï¿½ma source. 
+// Gï¿½nï¿½rï¿½ le : 2018.11.22 ï¿½ 10:57:54 AM GMT+01:00 
 //
 
 
@@ -26,14 +26,14 @@ import javax.xml.bind.annotation.XmlRegistry;
  * 
  */
 @XmlRegistry
-public class ObjectFactory {
+public class ObjectFactoryConnectArmedRequestMessage {
 
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.talan.siconia.connectmeter.request
      * 
      */
-    public ObjectFactory() {
+    public ObjectFactoryConnectArmedRequestMessage() {
     }
 
     /**

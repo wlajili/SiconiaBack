@@ -1,17 +1,28 @@
 package com.talant.siconia.dao;
 
-import java.util.ArrayList;
+import java.util.Optional;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.query.Param;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.talant.siconia.entite.DeviceEntity;
 
-@CrossOrigin(origins = "http://localhost:4200")
-@RepositoryRestResource(path = "/Devices")
-public interface DeviceRepository extends JpaRepository<DeviceEntity, String>{
+/***
+ * 
+ * File DeviceRepository.java <br>
+ * Date 13 déc. 2018 <br>
+ * Author "Wajdi Lajili" <br>
+ * Description of DeviceRepository.java : <br>
+ *
+ *
+ * This copyright notice should not be removed  <br>
+ *
+ */
 
-	public ArrayList<DeviceEntity> findByMridStartsWith(@Param (value = "mrid")String mrid);
+
+public interface DeviceRepository extends JpaRepository<DeviceEntity, Long>, DeviceDAOCustom{
+	
+	public Optional<DeviceEntity> findByMrid(String mrid);
+	public Optional<Page<DeviceEntity>> findByMridStartsWith (String mrid, Pageable pageable);
 }
